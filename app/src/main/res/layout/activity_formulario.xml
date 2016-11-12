@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="leoh4410.proyectomuni.Formulario">
+    tools:context="leoh4410.proyectomuni.Formulario"
+    android:background="#ffffff">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -26,92 +27,69 @@
             android:layout_height="match_parent">
 
             <android.support.design.widget.TextInputLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/view" />
-
-            <EditText
+                android:id="@+id/editTextDni2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/editTextNom"
-                android:hint="Ingrese su Nombre"
-                android:layout_gravity="center" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/editTextApe"
-                android:hint="Ingrese su Apellido"
-                android:layout_gravity="center" />
-
-            <EditText
-                android:layout_width="125dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/editTextDni"
-                android:hint="Ingrese su DNI"
-                android:layout_gravity="left" />
-
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/editTextNULL"
-                android:inputType="none"
-                android:layout_gravity="center"
-                android:text="Domicilio"
-                android:textStyle="bold"
-                android:textSize="24dp"
-                android:textAlignment="center"
-                android:textColor="#6a92f9"
-                android:enabled="false" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:id="@+id/editTextCalle"
-                android:hint="Ingrese su calle"
-                android:editable="false"
-                android:inputType="text" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:weightSum="1"
-                android:layout_gravity="center">
+                android:layout_height="wrap_content">
 
                 <EditText
-                    android:layout_width="100dp"
+                    android:id="@+id/editTextDni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="Ingrese su DNI"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextNom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="Ingrese su Nombre"
+                    android:layout_gravity="center"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextApe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextApe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="Ingrese su Apellido"
+                    android:layout_gravity="center"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextTel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextTel"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:id="@+id/editTextNumDom"
-                    android:hint="Nº"
+                    android:hint="Ingrese su Teléfono"
                     android:inputType="number"
-                    android:gravity="center_horizontal" />
-
-                <EditText
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editTextPisoDom"
-                    android:hint="Piso"
-                    android:layout_gravity="center"
-                    android:gravity="center_horizontal" />
-
-                <EditText
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText"
-                    android:hint="Dpto."
-                    android:layout_gravity="right"
-                    android:gravity="center_horizontal" />
-
-            </LinearLayout>
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
 
             <EditText
                 android:layout_width="300dp"
@@ -129,47 +107,78 @@
                 android:focusableInTouchMode="false"
                 android:enabled="false" />
 
-            <EditText
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextCorreo2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
-                android:id="@+id/editTextCorreo"
-                android:layout_gravity="center"
-                android:hint="Ingrese su dirección de correo"
-                android:editable="false" />
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:id="@+id/editTextUsu"
-                android:hint="Elija un nombre de usuario"
-                android:editable="false"
-                android:inputType="text" />
+                <EditText
+                    android:id="@+id/editTextCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:layout_gravity="center"
+                    android:hint="Ingrese su dirección de correo"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:id="@+id/editTextPass"
-                android:hint="Ingrese una contraseña"
-                android:layout_gravity="center"
-                android:inputType="textPassword" />
 
-            <EditText
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextUsu2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/editTextPass2"
-                android:hint="Repita su contraseña"
-                android:layout_gravity="center" />
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextUsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Elija un nombre de usuario"
+                    android:inputType="text"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextPass_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese una contraseña"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextPass2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextPass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:hint="Repita su contraseña"
+                    android:layout_gravity="center"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"
-                android:id="@+id/button3" />
+                android:layout_height="30dp"
+                android:id="@+id/buttonSeparador"
+                android:background="#ffffff" />
 
             <LinearLayout
                 android:orientation="horizontal"
