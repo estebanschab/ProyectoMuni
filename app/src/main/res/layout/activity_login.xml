@@ -8,10 +8,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="leoh4410.proyectomuni.LoginActivity"
+    tools:context=".activities.LoginActivity"
     android:weightSum="1"
-    android:background="#ffffff"
-    android:backgroundTint="#ffffff">
+    android:background="@color/window_background"
+    android:backgroundTint="@color/window_background">
 
     <!-- Login progress -->
 
@@ -82,16 +82,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="@color/primaryDarkColor"
+                android:textColor="@color/window_background"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="¿Olvidaste tu contraseña?"
                 android:id="@+id/button2"
-                android:background="#ffffff"
-                android:backgroundTint="#ffffff"
-                android:textColor="#0059ff"
+                android:background="@color/window_background"
+                android:backgroundTint="@color/window_background"
+                android:textColor="@color/accentColor"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -107,17 +109,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="¿Es la primera vez que vas a usar la App?"
+            android:text="@string/PrimerUso"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal"
             android:textStyle="bold"
-            android:textSize="15dp" />
+            android:textSize="17dp"
+            android:textColor="@color/accentColor"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CREAR UNA CUENTA NUEVA"
-            android:id="@+id/button" />
+            android:id="@+id/button"
+            android:background="@color/primaryDarkColor"
+            android:textColor="@color/window_background"/>
     </LinearLayout>
 
 </LinearLayout>

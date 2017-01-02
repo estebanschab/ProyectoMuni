@@ -1,4 +1,4 @@
-package leoh4410.proyectomuni;
+package leoh4410.proyectomuni.activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -31,6 +31,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import leoh4410.proyectomuni.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -67,7 +69,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_lo);
+        setContentView(R.layout.activity_login);
         // Set up the login form.
         mVistaMail = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
