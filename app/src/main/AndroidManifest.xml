@@ -13,18 +13,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".activities.LoginActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.FormActivity"
             android:label="Formulario de Inscripción"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activities.PrincipalActivity"
             android:label="Reclamos"
@@ -35,7 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".activities.NuevoReclamo"></activity>
     </application>
 
 </manifest>
