@@ -9,31 +9,38 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.List;
 
+import leoh4410.proyectomuni.dto.UsuarioDTO;
 import leoh4410.proyectomuni.utils.EstadoReclamo;
 import leoh4410.proyectomuni.utils.TipoReclamo;
 import leoh4410.proyectomuni.utils.TipoUsuario;
 
-/**
- * Created by USUARIO on 04/11/2016.
- */
 public class Reclamo extends SugarRecord implements Serializable{
 
+    //TODO
+    private int id_imagen;
+    private String nombre, categoria, subCategoria;
+    //Hasta acá atributos utilizados como prueba...
+
     //ver como es el tema del campo id que autogenera SugarORM
+    /**private long numero;
+    private TipoReclamo tipoReclamo;
+    private EstadoReclamo estadoReclamo;
+    private String descripcion;
+    private float latitud;
+    private float longitud;
+    private List<Imagen> imagenes;
+    private List<Mensaje> mensajes;*/
 
-    long numero;
-    TipoReclamo tipoReclamo;
-    EstadoReclamo estadoReclamo;
-    String descripcion;
-    float latitud;
-    float longitud;
-    List<Imagen> imagenes;
-    List<Mensaje> mensajes;
-
-    public Reclamo () {
-
+    //TODO
+    public Reclamo (int id_imagen, String nombre, String categoria, String subCategoria)
+    {
+        this.setId_imagen(id_imagen);
+        this.setCategoria(categoria);
+        this.setSubCategoria(subCategoria);
+        this.setNombre(nombre);
     }
 
-    public Reclamo (long numero, TipoReclamo tipoReclamo, EstadoReclamo estadoReclamo, String descripcion, float latitud, float longitud, List<Imagen> imagenes, List<Mensaje> mensajes) {
+    /** public Reclamo (long numero, TipoReclamo tipoReclamo, EstadoReclamo estadoReclamo, String descripcion, float latitud, float longitud, List<Imagen> imagenes, List<Mensaje> mensajes) {
         this.numero = numero;
         this.tipoReclamo = tipoReclamo;
         this.estadoReclamo = estadoReclamo;
@@ -42,70 +49,37 @@ public class Reclamo extends SugarRecord implements Serializable{
         this.longitud = longitud;
         this.imagenes = imagenes;
         this.mensajes = mensajes;
+    }*/
+
+    public int getId_imagen() {
+        return id_imagen;
     }
 
-    public long getNumero() {
-        return numero;
+    public void setId_imagen(int id_imagen) {
+        this.id_imagen = id_imagen;
     }
 
-    public void setNumero(long numero) {
-        this.numero = numero;
+    public String getNombre() {
+        return nombre;
     }
 
-    public TipoReclamo getTipoReclamo() {
-        return tipoReclamo;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void setTipoReclamo(TipoReclamo tipoReclamo) {
-        this.tipoReclamo = tipoReclamo;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public EstadoReclamo getEstadoReclamo() {
-        return estadoReclamo;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
-    public void setEstadoReclamo(EstadoReclamo estadoReclamo) {
-        this.estadoReclamo = estadoReclamo;
+    public String getSubCategoria() {
+        return subCategoria;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public void setSubCategoria(String subCategoria) {
+        this.subCategoria = subCategoria;
     }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public float getLatitud() {
-        return latitud;
-    }
-
-    public void setLatitud(float latitud) {
-        this.latitud = latitud;
-    }
-
-    public float getLongitud() {
-        return longitud;
-    }
-
-    public void setLongitud(float longitud) {
-        this.longitud = longitud;
-    }
-
-    public List<Imagen> getImagenes() {
-        return imagenes;
-    }
-
-    public void setImagenes(List<Imagen> imagenes) {
-        this.imagenes = imagenes;
-    }
-
-    public List<Mensaje> getMensajes() {
-        return mensajes;
-    }
-
-    public void setMensajes(List<Mensaje> mensajes) {
-        this.mensajes = mensajes;
-    }
-
 }

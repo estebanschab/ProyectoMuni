@@ -1,20 +1,19 @@
-package leoh4410.proyectomuni.activities;
+package leoh4410.proyectomuni.activities.menu;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import leoh4410.proyectomuni.LastFragment;
-import leoh4410.proyectomuni.MyFragment;
-import leoh4410.proyectomuni.NearFragment;
 import leoh4410.proyectomuni.R;
-import leoh4410.proyectomuni.ViewPagerAdapter;
 
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class PrincipalActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private ViewPagerAdapter viewPagerAdapter;
+    private ViewPagerMenuAdapter viewPagerAdapter;
     private int[] tabIcons = {
             R.drawable.ic_action_time,
             R.drawable.ic_action_position,
@@ -44,7 +43,7 @@ public class PrincipalActivity extends AppCompatActivity {
     //TODO
     private void setupViewPager(ViewPager viewPager)
     {
-        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter = new ViewPagerMenuAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragments(new LastFragment(), "Ultimos");
         viewPagerAdapter.addFragments(new NearFragment(), "Cercanos");
         viewPagerAdapter.addFragments(new MyFragment(), "Propios");

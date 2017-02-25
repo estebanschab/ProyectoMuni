@@ -1,33 +1,37 @@
-package leoh4410.proyectomuni.activities;
+package leoh4410.proyectomuni.activities.reclamo;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
 import leoh4410.proyectomuni.R;
 
-public class FormActivity extends AppCompatActivity {
+
+public class NuevoReclamoActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form);
+        setContentView(R.layout.activity_nuevo_reclamo);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarFormulario);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarNuevoRec);
         setSupportActionBar(toolbar);
-
+        //getSupportActionBar().setTitle(null);
 
         //TODO
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(FormActivity.this, R.string.CancelarFormulario, Toast.LENGTH_LONG).show();
+                Toast.makeText(NuevoReclamoActivity.this, R.string.CancelarReclamo, Toast.LENGTH_LONG).show();
             }
         });
+
     }
 
     @Override
@@ -44,8 +48,7 @@ public class FormActivity extends AppCompatActivity {
                 //TODO
                 Toast.makeText(getApplicationContext(), getText(R.string.ConfirmarEnvio), Toast.LENGTH_SHORT).show();
                 return true;
-        default: return super.onOptionsItemSelected(item);
+            default: return super.onOptionsItemSelected(item);
         }
     }
-
 }

@@ -1,14 +1,12 @@
-package leoh4410.proyectomuni;
+package leoh4410.proyectomuni.activities.menu;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 
-/**
- * Created by Leo on 27/12/2016.
- */
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class ViewPagerMenuAdapter extends FragmentPagerAdapter {
 
     ArrayList<Fragment> fragments = new ArrayList<>();
     ArrayList<String> tabTitles = new ArrayList<>();
@@ -19,7 +17,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         this.tabTitles.add(tabTitles);
     }
 
-    public ViewPagerAdapter (FragmentManager fm)
+    public ViewPagerMenuAdapter(FragmentManager fm)
     {
         super(fm);
     }

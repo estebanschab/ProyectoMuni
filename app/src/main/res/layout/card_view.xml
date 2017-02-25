@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view"
+        >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pic_calle"
+                android:id="@+id/imageViewCardView"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewCardView"
+                android:text="Recolección de Residuos"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/textViewCategoríaCardView"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCategoríaCardView"
+                android:layout_toRightOf="@+id/imageViewCardView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Basura Tirada"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewSubCategoríaCardView"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSubCategoríaCardView"
+                android:layout_toRightOf="@+id/imageViewCardView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Juan Gonzalez"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:id="@+id/textViewUsuarioCardView"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

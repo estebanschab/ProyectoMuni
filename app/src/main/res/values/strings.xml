@@ -13,6 +13,9 @@
     <string name="ConfirmarEnvio"> Se envío el formulario</string>
     <string name="CancelarFormulario"> Se canceló el formulario </string>
 
+    <!-- Strings relacionaos al NuevoReclamo -->
+    <string name="CancelarReclamo"> Se canceló el reclamo</string>
+
     <!-- Strings relacionados al logueo -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Contraseña</string>
@@ -28,4 +31,27 @@
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
 
 
+    <string-array name="Categoría">
+        <item> Recolección de Residuos </item>
+        <item> Alumbrado Público </item>
+        <item> Señalización Vial </item>
+        <item> Mantenimiento de Calles </item>
+        <item> Bromatología </item>
+    </string-array>
+
+    <string-array name="Sub_Categoría">
+        <item> Basura Tirada </item>
+        <item> Faro Roto </item>
+        <item> Cartel Dañado </item>
+        <item> Pavimento Dañado </item>
+        <item> Falta de Higiene </item>
+    </string-array>
+
+    <string-array name="Usuario">
+        <item> Juan </item>
+        <item> Romina </item>
+        <item> Emilio </item>
+        <item> Gustavo </item>
+        <item> Julia </item>
+    </string-array>
 </resources>
