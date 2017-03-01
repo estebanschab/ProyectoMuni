@@ -1,22 +1,11 @@
-package leoh4410.proyectomuni.utils;
+package leoh4410.proyectomuni.apiAccess;
 
 import android.content.Context;
-import android.content.SharedPreferences;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import com.google.gson.reflect.TypeToken;
-import org.json.JSONObject;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by USUARIO on 04/11/2016.
@@ -53,7 +42,7 @@ public class RequestSingleton {
 
         try {
             if(token != null) {
-                req.getHeaders().put("AuthToken", token);
+                req.getHeaders().put("Authentication", token);
             }
         } catch (AuthFailureError authFailureError) {
             authFailureError.printStackTrace();
