@@ -26,7 +26,7 @@ public class ReclamoAdapter extends RecyclerView.Adapter <ReclamoAdapter.Reclamo
 
     @Override
     public ReclamoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_reclamo,parent,false);
         ReclamoViewHolder reclamoViewHolder = new ReclamoViewHolder(view);
         return reclamoViewHolder;
     }
@@ -51,8 +51,8 @@ public class ReclamoAdapter extends RecyclerView.Adapter <ReclamoAdapter.Reclamo
         public ReclamoViewHolder (View view)
         {
             super (view);
-            imagen = (ImageView) view.findViewById(R.id.imageViewCardView);
-            categoria = (TextView) view.findViewById(R.id.textViewCategoríaCardView);
+            imagen = (ImageView) view.findViewById(R.id.imageViewCardViewReclamo);
+            categoria = (TextView) view.findViewById(R.id.textViewCategoríaCardViewCat);
             subCategoria = (TextView) view.findViewById(R.id.textViewSubCategoríaCardView);
             usuario = (TextView) view.findViewById(R.id.textViewUsuarioCardView);
         }

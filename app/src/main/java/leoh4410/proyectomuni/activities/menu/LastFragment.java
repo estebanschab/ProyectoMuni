@@ -54,7 +54,7 @@ public class LastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_last, container, false);
-        recycler_View = (RecyclerView) view.findViewById(R.id.recyclerView);
+        recycler_View = (RecyclerView) view.findViewById(R.id.recyclerViewReclamo);
         layoutManager = new LinearLayoutManager(this.getActivity());
         recycler_View.setLayoutManager(layoutManager);
         recycler_View.setHasFixedSize(true);

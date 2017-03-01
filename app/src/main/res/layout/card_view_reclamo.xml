@@ -7,7 +7,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/card_view"
+        android:id="@+id/card_view_reclamo"
         >
         
         <RelativeLayout
@@ -19,43 +19,43 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/pic_calle"
-                android:id="@+id/imageViewCardView"
+                android:id="@+id/imageViewCardViewReclamo"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageViewCardView"
+                android:layout_toRightOf="@+id/imageViewCardViewReclamo"
                 android:text="Recolección de Residuos"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_alignParentTop="true"
-                android:id="@+id/textViewCategoríaCardView"
+                android:id="@+id/textViewCategoríaCardViewReclamo"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textViewCategoríaCardView"
-                android:layout_toRightOf="@+id/imageViewCardView"
+                android:layout_below="@+id/textViewCategoríaCardViewReclamo"
+                android:layout_toRightOf="@+id/imageViewCardViewReclamo"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:text="Basura Tirada"
                 android:textSize="17dp"
                 android:textStyle="bold"
-                android:id="@+id/textViewSubCategoríaCardView"
+                android:id="@+id/textViewSubCategoríaCardViewReclamo"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textViewSubCategoríaCardView"
-                android:layout_toRightOf="@+id/imageViewCardView"
+                android:layout_below="@+id/textViewSubCategoríaCardViewReclamo"
+                android:layout_toRightOf="@+id/imageViewCardViewReclamo"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:text="Juan Gonzalez"
                 android:textSize="13dp"
                 android:textStyle="bold"
-                android:id="@+id/textViewUsuarioCardView"
+                android:id="@+id/textViewUsuarioCardViewReclamo"
                 />
         </RelativeLayout>
     </android.support.v7.widget.CardView>

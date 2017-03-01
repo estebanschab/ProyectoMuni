@@ -20,10 +20,14 @@
         <activity
             android:name=".activities.FormActivity"
             android:label="Formulario de Inscripción"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.menu.PrincipalActivity"
             android:label="Menu Principal"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.reclamo.NuevoReclamoActivity"
+            android:label="Generar Reclamo"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,11 +35,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".activities.reclamo.NuevoReclamoActivity"
-            android:label="Generar Reclamo"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".activities.reclamo.ReclamoActivity"></activity>
+            android:name=".activities.reclamo.ReclamoActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.reclamo.CategoriaActivity"
+            android:label="Seleccione una categoría">
+        </activity>
     </application>
 
 </manifest>
