@@ -24,7 +24,7 @@
         <activity
             android:name=".activities.menu.PrincipalActivity"
             android:label="Menu Principal"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.reclamo.NuevoReclamoActivity"
             android:label="Generar Reclamo"
@@ -35,15 +35,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".activities.reclamo.ReclamoActivity">
-        </activity>
-
+        <activity android:name=".activities.reclamo.ReclamoActivity"></activity>
         <activity
             android:name=".activities.reclamo.CategoriaActivity"
-            android:label="Seleccione una categoría">
-        </activity>
+            android:label="Seleccione una categoría"></activity>
+        <activity android:name=".activities.reclamo.SubcategoriaActivity"></activity>
     </application>
 
 </manifest>
